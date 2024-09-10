@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos - Escuela EETN°3117</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="logo.png" alt="Logo" class="logo">
+            <h1>Gestión Reyes - EETN°3117 Mtro Daniel O. Reyes</h1>
+        </div>
+
+        <nav class="sidebar">
+            <button onclick="irAInicio()"><i class="fas fa-home"></i> Inicio</button>
+            <button onclick="irACursos()"><i class="fas fa-book"></i> Cursos</button>
+            <button onclick="irAEventos()"><i class="fas fa-calendar-alt"></i> Eventos</button>
+            <button onclick="irAMesas()"><i class="fas fa-clipboard-list"></i> Mesas de Exámenes</button>
+        </nav>
+    </header>
+
+    <div class="content">
+        <main>
+            <h2 class="section-title">Próximos Eventos</h2>
+            <p class="section-description">Aquí encontrarás información sobre los próximos eventos de la Escuela Técnica N°3117. ¡No te los pierdas!</p>
+
+            <div class="event-cards">
+                <div class="event-card">
+                    <i class="fas fa-project-diagram event-icon"></i>
+                    <h3>Presentación de Proyectos</h3>
+                    <p class="event-date"><i class="fas fa-calendar-alt"></i> 2/08/2024, 8:00 - 10:00</p>
+                    <p class="event-description">Inovadores del futuro: Los estudiantes mostrarán sus proyectos más creativos y tecnológicos.</p>
+                </div>
+
+                <div class="event-card">
+                    <i class="fas fa-school event-icon"></i>
+                    <h3>Visita de Escuela Primaria</h3>
+                    <p class="event-date"><i class="fas fa-calendar-alt"></i> 2/08/2024, 8:00 - 10:00</p>
+                    <p class="event-description">Los alumnos de primaria visitarán nuestra escuela para conocer nuestras instalaciones y proyectos.</p>
+                </div>
+
+                <div class="event-card">
+                    <i class="fas fa-futbol event-icon"></i>
+                    <h3>Torneo de Fútbol-Tenis</h3>
+                    <p class="event-date"><i class="fas fa-calendar-alt"></i> 2/08/2024, 16:00 - 18:00</p>
+                    <p class="event-description">Participa en el torneo de fútbol-tenis. ¡Habrá premios para los ganadores!</p>
+                </div>
+
+                <!-- Nueva tarjeta de evento de aviso de suspensión de clases -->
+                <div class="event-card">
+                    <i class="fas fa-exclamation-circle event-icon"></i>
+                    <h3>Suspensión de Clases</h3>
+                    <p class="event-date"><i class="fas fa-calendar-alt"></i> 12/09/2024 - 13/09/2024</p>
+                    <p class="event-description">Se informa que los días jueves 12 y viernes 13 de septiembre no habrá clases.</p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
+
